@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import resumePdf from "../assets/Sulabh_Hathi_Resume 22.10.26.pdf?url";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -27,12 +26,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full z-50 bg-white transition-all duration-300 ${
-        scrolled ? "fixed top-0 shadow-md" : "sticky top-0"
-      }`}
+      className={`w-full z-50 bg-white transition-all duration-300 ${scrolled ? "fixed top-0 shadow-md" : "sticky top-0"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-        
+
         {/* LOGO */}
         <a href="#home" className="text-2xl font-bold text-[#3f396d]">
           Sulabh
@@ -53,29 +51,12 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* DESKTOP ACTIONS */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href={resumePdf}
-            target="_blank"
-            rel="noreferrer"
-            className="border-2 border-[#6f34fe]/25 text-[#3f396d] px-5 py-2 rounded-full font-semibold hover:border-[#6f34fe] hover:text-[#6f34fe] transition duration-300 text-sm flex items-center gap-1.5"
-          >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-            </svg>
-            <span>Resume</span>
-          </a>
-
-          <a href="#contact">
-            <button className="bg-[#fca61f] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#6f34fe] transition duration-300 text-sm">
-              Contact
-            </button>
-          </a>
-        </div>
+        {/* CONTACT BUTTON */}
+        <a href="#contact" className="hidden md:block">
+          <button className="bg-[#fca61f] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#6f34fe] transition duration-300">
+            Contact
+          </button>
+        </a>
 
         {/* MOBILE MENU BUTTON */}
         <button
@@ -103,18 +84,9 @@ export default function Navbar() {
               </li>
             ))}
 
-            <li className="pt-2 flex flex-col gap-2">
-              <a
-                href={resumePdf}
-                target="_blank"
-                rel="noreferrer"
-                onClick={handleCloseMenu}
-                className="w-full text-center border-2 border-[#6f34fe]/25 text-[#3f396d] py-2.5 rounded-full font-semibold block"
-              >
-                View Resume (PDF)
-              </a>
+            <li className="pt-2">
               <a href="#contact" onClick={handleCloseMenu}>
-                <button className="bg-[#fca61f] text-white px-6 py-2.5 rounded-full w-full font-semibold">
+                <button className="bg-[#fca61f] text-white px-6 py-2 rounded-full w-full font-semibold">
                   Contact
                 </button>
               </a>
