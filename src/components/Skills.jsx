@@ -281,6 +281,25 @@ const Icons = {
       <path d="M12 5.5l-4.5 5.5h3v3.5h3V11h3L12 5.5z" fill="#fff" />
     </svg>
   ),
+  mongoose: (
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+      <rect width="24" height="24" rx="5" fill="#880000" />
+      <path d="M6 16.5V7.5L12 12l6-4.5v9" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  mysql: (
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+      <rect width="24" height="24" rx="5" fill="#00618A" />
+      <path d="M17.5 13.5c-.8.3-1.8.4-2.8.2-1.5-.3-2.7-1.3-3.4-2.7-.4-.8-.6-1.7-.5-2.6.1-1 .6-1.9 1.4-2.5.3-.2.2-.6-.2-.6-.6 0-1.3.2-1.9.6-1.5 1-2.2 2.7-2 4.5.3 2.1 1.9 3.8 4 4.3 1.2.3 2.4.2 3.5-.2.4-.2.5-.7.1-.9l-1.3-.8c-.3-.2-.5-.1-.7.1-.4.3-.9.4-1.4.3-1-.2-1.8-1-2.1-2-.1-.4.2-.7.6-.7h5.8c.4 0 .7.3.7.7v.5c0 .4-.2.7-.5.9z" fill="#E48E00" />
+      <circle cx="8" cy="8.5" r="1" fill="#fff" />
+    </svg>
+  ),
+  npm: (
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+      <rect width="24" height="24" rx="4" fill="#CB3837" />
+      <path d="M5 8h14v8H12v-5H8.5v5H5V8z" fill="#fff" />
+    </svg>
+  ),
 }
 
 /* ─────────────────────────────────────────────
@@ -294,64 +313,81 @@ const circularSkills = [
 ]
 
 /* ─────────────────────────────────────────────
-   Categorized Tech Stack Data with Brand SVGs
+   Categorized Tech Stack Data with Brand SVGs (From Resume)
 ───────────────────────────────────────────── */
 const categories = [
   {
     id: 'frontend',
     icon: (
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6f34fe" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f34fe" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="3" width="20" height="14" rx="2" /><polyline points="8 21 12 17 16 21" /><line x1="12" y1="17" x2="12" y2="21" />
       </svg>
     ),
     iconBg: '#f0ebff',
-    title: 'Frontend Development',
-    desc: 'Building responsive, accessible and interactive user interfaces with modern frameworks.',
+    title: 'Front-End',
+    desc: 'Responsive, accessible, and high-performance user interfaces with modern libraries.',
     skills: [
-      { name: 'React', color: '#61dafb', icon: Icons.react },
-      { name: 'JavaScript', color: '#f7df1e', icon: Icons.javascript },
-      { name: 'Tailwind CSS', color: '#38bdf8', icon: Icons.tailwind },
+      { name: 'React.js', color: '#61dafb', icon: Icons.react },
+      { name: 'JavaScript (ES6+)', color: '#f7df1e', icon: Icons.javascript },
       { name: 'HTML5', color: '#e34f26', icon: Icons.html5 },
       { name: 'CSS3', color: '#1572b6', icon: Icons.css3 },
       { name: 'Bootstrap', color: '#7952b3', icon: Icons.bootstrap },
+      { name: 'Tailwind CSS', color: '#38bdf8', icon: Icons.tailwind },
     ],
   },
   {
     id: 'backend',
     icon: (
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#20c997" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#20c997" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="8" rx="2" /><rect x="2" y="14" width="20" height="8" rx="2" /><line x1="6" y1="6" x2="6.01" y2="6" /><line x1="6" y1="18" x2="6.01" y2="18" />
       </svg>
     ),
     iconBg: '#e6faf5',
-    title: 'Backend & Database',
-    desc: 'Building robust RESTful APIs, secure authentication and scalable server architectures.',
+    title: 'Back-End',
+    desc: 'Server-side architectures, RESTful API design, middleware, and secure authentication.',
     skills: [
       { name: 'Node.js', color: '#68a063', icon: Icons.nodejs },
       { name: 'Express.js', color: '#555', icon: Icons.express },
-      { name: 'MongoDB', color: '#47a248', icon: Icons.mongodb },
-      { name: 'Firebase', color: '#ffca28', icon: Icons.firebase },
-      { name: 'REST API', color: '#6f34fe', icon: Icons.restapi },
-      { name: 'JWT', color: '#e91e63', icon: Icons.jwt },
+      { name: 'REST APIs', color: '#6f34fe', icon: Icons.restapi },
+      { name: 'JWT Auth', color: '#e91e63', icon: Icons.jwt },
     ],
   },
   {
-    id: 'tools',
+    id: 'databases',
     icon: (
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fca61f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0284c7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+      </svg>
+    ),
+    iconBg: '#e8f7ff',
+    title: 'Databases',
+    desc: 'Schema modeling, relational & NoSQL data management, and optimized querying.',
+    skills: [
+      { name: 'MongoDB', color: '#47a248', icon: Icons.mongodb },
+      { name: 'Mongoose', color: '#880000', icon: Icons.mongoose },
+      { name: 'MySQL', color: '#00618a', icon: Icons.mysql },
+    ],
+  },
+  {
+    id: 'tools-devops',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fca61f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
       </svg>
     ),
     iconBg: '#fff8ed',
-    title: 'Tools & Platforms',
-    desc: 'Developer tools, version control, and cloud platforms for fast development and deployment.',
+    title: 'Tools & DevOps',
+    desc: 'Version control, package managers, cloud hosting, and developer environments.',
     skills: [
       { name: 'Git', color: '#f05032', icon: Icons.git },
       { name: 'GitHub', color: '#333', icon: Icons.github },
-      { name: 'VS Code', color: '#007acc', icon: Icons.vscode },
+      { name: 'Netlify', color: '#00c7b7', icon: Icons.netlify },
       { name: 'Vercel', color: '#000', icon: Icons.vercel },
-      { name: 'AWS', color: '#ff9900', icon: Icons.aws },
-      { name: 'Figma', color: '#a259ff', icon: Icons.figma },
+      { name: 'Postman', color: '#ff6c37', icon: Icons.postman },
+      { name: 'VS Code', color: '#007acc', icon: Icons.vscode },
+      { name: 'npm', color: '#cb3837', icon: Icons.npm },
     ],
   },
 ]
@@ -587,11 +623,11 @@ export default function Skills() {
               Core Technical Stack
             </h3>
             <p className="text-gray-500 text-sm mt-1">
-              Key technologies divided by development discipline
+              Technical skills structured across Front-End, Back-End, Databases &amp; DevOps
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((cat) => (
               <div
                 key={cat.id}

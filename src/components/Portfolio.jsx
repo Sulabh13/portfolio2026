@@ -9,43 +9,55 @@ import hospital from "../assets/logo.png";
 const projects = [
   {
     title: "RoomFinder Nearby",
+    subtitle: "Room Rental Web App",
+    desc: "Full-stack rental platform with search, location & price filters, JWT auth, and role-based access for landlords and tenants.",
     img: roomrenatl,
-    tags: ["React JS", "Node.js", "MongoDB", "Tailwind CSS"],
+    tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
     filter: "website",
     link: "https://roomfindernearby.netlify.app",
   },
   {
     title: "Excellup Coding Classes",
+    subtitle: "Online EdTech Platform",
+    desc: "Edtech platform with course listings, enrollment, instructor dashboards, Razorpay payments, supporting 300+ registered students.",
     img: tic,
-    tags: ["React JS", "Node.js", "MongoDB", "Razorpay"],
+    tags: ["React.js", "Node.js", "MongoDB", "Bootstrap", "Razorpay"],
     filter: "website",
     link: "https://excellup.in/",
   },
   {
     title: "Foodify – Food Delivery",
+    subtitle: "Online Food Delivery Website",
+    desc: "Food delivery app with restaurant listings, cart, order tracking using Context API, achieving sub-2s average page load.",
     img: foodWeb,
-    tags: ["React JS", "Node.js", "MongoDB", "Context API"],
+    tags: ["React.js", "Node.js", "MongoDB", "CSS3", "Context API"],
     filter: "website",
     link: "https://foodifyweb.netlify.app",
   },
   {
     title: "Nishok Hospital Website",
+    subtitle: "Doctor's Hospital (Client Project)",
+    desc: "Live website designed and deployed for a Balaghat-based doctor as a freelance client project, from requirements to production.",
     img: hospital,
-    tags: ["Freelance Client", "HTML & CSS", "JavaScript"],
+    tags: ["Freelance Client", "HTML5", "CSS3", "JavaScript"],
     filter: "brand",
     link: "https://nishokhospital.in/",
   },
   {
     title: "Stone Paper Scissors",
+    subtitle: "Interactive Game App",
+    desc: "Browser-based interactive game with responsive animations, score tracking, and clean gameplay logic.",
     img: rps,
-    tags: ["HTML & CSS", "JavaScript", "Game"],
+    tags: ["JavaScript", "HTML & CSS", "Game"],
     filter: "game",
     link: "#",
   },
   {
     title: "YouTube Clone",
+    subtitle: "Video Streaming Platform",
+    desc: "Responsive video streaming platform interface with search, categories, video grid, and responsive media player.",
     img: youtube,
-    tags: ["HTML & CSS", "JavaScript", "WebApp"],
+    tags: ["JavaScript", "HTML & CSS", "WebApp"],
     filter: "webapp",
     link: "https://cloneyoutubecom.netlify.app",
   },
@@ -111,41 +123,64 @@ export default function Portfolio() {
                 style={{ height: 250 }}
               />
 
-              <div className="p-4 text-center">
-
-                <h4
-                  className="font-bold text-base mb-2"
-                  style={{ color: "#3f396d" }}
-                >
-                  {p.title}
-                </h4>
-
-                {/* Tags */}
-                <div className="flex gap-2 justify-center flex-wrap mb-3">
-                  {p.tags.map((t) => (
-                    <span
-                      key={t}
-                      className="bg-gray-600 text-white text-xs px-2 py-1 rounded-full"
+              <div className="p-5 flex flex-col justify-between flex-1">
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1.5 text-left">
+                    <h4
+                      className="font-bold text-lg"
+                      style={{ color: "#3f396d" }}
                     >
-                      {t}
-                    </span>
-                  ))}
+                      {p.title}
+                    </h4>
+                    {p.subtitle && (
+                      <span className="text-[11px] font-semibold text-[#6f34fe] bg-[#f0ebff] px-2.5 py-0.5 rounded-full border border-[#6f34fe20] w-fit">
+                        {p.subtitle}
+                      </span>
+                    )}
+                  </div>
+
+                  {p.desc && (
+                    <p className="text-gray-500 text-xs text-left mb-3.5 leading-relaxed line-clamp-2">
+                      {p.desc}
+                    </p>
+                  )}
+
+                  {/* Tags */}
+                  <div className="flex gap-1.5 justify-start flex-wrap mb-4">
+                    {p.tags.map((t) => (
+                      <span
+                        key={t}
+                        className="bg-[#f4f4f8] text-[#3f396d] border border-gray-200 text-[11px] font-medium px-2.5 py-0.5 rounded-full"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Live Website */}
-                <a
-                  href={p.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`font-medium transition-colors ${
-                    p.link === "#"
-                      ? "text-gray-400 cursor-not-allowed pointer-events-none"
-                      : "text-[#fca61f] hover:text-[#6f34fe]"
-                  }`}
-                >
-                  {p.link === "#" ? "Coming Soon" : "View Live"}
-                </a>
-
+                <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
+                  <span className="text-xs text-gray-400 font-medium">Production Link</span>
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-1.5 rounded-full transition-all ${
+                      p.link === "#"
+                        ? "bg-gray-100 text-gray-400 cursor-not-allowed pointer-events-none"
+                        : "bg-[#fca61f]/10 text-[#fca61f] hover:bg-[#fca61f] hover:text-white"
+                    }`}
+                  >
+                    <span>{p.link === "#" ? "Coming Soon" : "View Live"}</span>
+                    {p.link !== "#" && (
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                    )}
+                  </a>
+                </div>
               </div>
             </div>
           ))}

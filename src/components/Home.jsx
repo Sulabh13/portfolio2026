@@ -1,7 +1,12 @@
 import { useEffect } from 'react'
 import sulabh from "../assets/sulabh.jpeg"
 
-const words = ['FullStack Developer', 'Problem Solver & Developer ', 'JavaScript', 'React js']
+const words = [
+  'Full-Stack Developer (MERN Stack)',
+  'React.js & Node.js Engineer',
+  'Problem Solver & Developer',
+  'REST APIs & MongoDB Specialist',
+]
 
 const InstagramLogo = () => (
   <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -88,8 +93,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-500 text-base leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
-            Building responsive, user-friendly applications from concept to deployment
-            with expertise in front-end and back-end development.
+            Motivated Full-Stack Developer skilled in the MERN stack with hands-on experience building and deploying live production web applications, REST APIs, and responsive design.
           </p>
 
           {/* Social Icons */}
