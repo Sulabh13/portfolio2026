@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import resumePdf from "../assets/Sulabh_Hathi_Resume 22.10.26.pdf?url";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -55,7 +56,7 @@ export default function Navbar() {
         {/* DESKTOP ACTIONS */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/Sulabh_Hathi_Resume.pdf"
+            href={resumePdf}
             target="_blank"
             rel="noreferrer"
             className="border-2 border-[#6f34fe]/25 text-[#3f396d] px-5 py-2 rounded-full font-semibold hover:border-[#6f34fe] hover:text-[#6f34fe] transition duration-300 text-sm flex items-center gap-1.5"
@@ -104,7 +105,7 @@ export default function Navbar() {
 
             <li className="pt-2 flex flex-col gap-2">
               <a
-                href="/Sulabh_Hathi_Resume.pdf"
+                href={resumePdf}
                 target="_blank"
                 rel="noreferrer"
                 onClick={handleCloseMenu}

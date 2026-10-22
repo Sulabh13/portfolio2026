@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import resumePdf from '../assets/Sulabh_Hathi_Resume.pdf?url'
-import resumeDocx from '../assets/Sulabh_Hathi_Resume.docx?url'
+import resumePdf from '../assets/Sulabh_Hathi_Resume 22.10.26.pdf?url'
+
 
 /* ─────────────────────────────────────────────
    Brand Logo SVG Icons

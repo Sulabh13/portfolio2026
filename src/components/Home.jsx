@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import sulabh from "../assets/sulabh.jpeg"
+import resumePdf from "../assets/Sulabh_Hathi_Resume 22.10.26.pdf?url"
 
 const words = [
   'Full-Stack Developer (MERN Stack)',
@@ -124,7 +125,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/Sulabh_Hathi_Resume.pdf"
+              href={resumePdf}
               download="Sulabh_Hathi_Resume.pdf"
               className="inline-flex items-center gap-2 bg-white text-[#3f396d] border-2 border-[#6f34fe]/25 px-7 py-2.5 rounded-full text-base font-semibold shadow-sm hover:border-[#6f34fe] hover:text-[#6f34fe] hover:-translate-y-1 transition-all duration-300"
             >
