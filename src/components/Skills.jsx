@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import resumeFile from '../assets/Sulabh hathi resume 2026 full stack devloper new img.docx?url'
+import resumePdf from '../assets/Sulabh_Hathi_Resume.pdf?url'
+import resumeDocx from '../assets/Sulabh_Hathi_Resume.docx?url'
 
 /* ─────────────────────────────────────────────
    Brand Logo SVG Icons
@@ -537,28 +538,44 @@ export default function Skills() {
               Beautiful &amp; Unique Digital Experiences
             </h3>
             <p className="text-gray-600 text-base leading-relaxed mb-4">
-              I am a Full Stack Web Developer with experience in designing and developing responsive, scalable, and user-focused web applications.
+              I am a motivated <strong className="text-[#3f396d]">Full-Stack Developer (MERN Stack)</strong> with hands-on experience building and deploying live production web applications, certified in Web Development and Google Cloud Security.
             </p>
             <p className="text-gray-600 text-base leading-relaxed mb-4">
-              On the front end, I build clean and modern user interfaces using HTML, CSS, Tailwind CSS, JavaScript, and React, ensuring high performance, accessibility, and cross-device compatibility.
+              Specialized in modern front-end technologies (<strong className="text-[#3f396d]">React.js, JavaScript ES6+, Tailwind CSS, Bootstrap</strong>) and robust back-end architectures (<strong className="text-[#3f396d]">Node.js, Express.js, REST APIs, MongoDB, JWT Authentication</strong>).
             </p>
             <p className="text-gray-600 text-base leading-relaxed mb-6">
-              In addition, I have a strong foundation in C/C++, which strengthens my problem-solving abilities and enables me to develop efficient, optimized solutions using data structures and algorithms. I am passionate about continuously learning and delivering reliable, high-quality software solutions.
+              Strong command of Git/GitHub, cloud deployment (Netlify, Vercel), and responsive UI design, eager to build impactful software solutions and contribute to engineering teams.
             </p>
 
-            <a
-              href={resumeFile}
-              download="Sulabh_Hathi_Resume.docx"
-              className="inline-flex items-center gap-2 bg-[#fca61f] text-white px-9 py-3.5 rounded-full text-base font-semibold shadow-lg hover:bg-[#6f34fe] hover:-translate-y-1 transition-all duration-300"
-              style={{ textDecoration: 'none' }}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-              Download CV
-            </a>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href={resumePdf}
+                download="Sulabh_Hathi_Resume.pdf"
+                className="inline-flex items-center gap-2 bg-[#fca61f] text-white px-7 py-3.5 rounded-full text-base font-semibold shadow-lg hover:bg-[#6f34fe] hover:-translate-y-1 transition-all duration-300"
+                style={{ textDecoration: 'none' }}
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download CV (PDF)
+              </a>
+
+              <a
+                href={resumePdf}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-[#3f396d] border-2 border-[#6f34fe]/25 px-6 py-3.5 rounded-full text-base font-semibold shadow-sm hover:border-[#6f34fe] hover:text-[#6f34fe] hover:-translate-y-1 transition-all duration-300"
+                style={{ textDecoration: 'none' }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                View Resume
+              </a>
+            </div>
           </div>
 
         </div>

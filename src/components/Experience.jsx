@@ -84,12 +84,12 @@ const experiences = [
   },
   {
     id: 'connect-shiksha',
-    company: 'Connect Shiksha',
-    role: 'Frontend Developer & Instructor',
-    period: '[Past Role — Jan 2025 – Sep 2025]',
+    company: 'Connect Shiksha Coding Institute, Balaghat, India',
+    role: 'Full-Stack Developer Intern',
+    period: 'Jan 2025 – March 2026',
     isCurrent: false,
     category: 'development-teaching',
-    typeBadge: 'Frontend Engineering & Training',
+    typeBadge: 'Full-Stack Internship',
     accentColor: '#38bdf8',
     badgeBg: '#e8f7ff',
     icon: (
@@ -100,22 +100,22 @@ const experiences = [
       </svg>
     ),
     summary:
-      'Engineered interactive, responsive user interfaces while training students in modern frontend web technologies, design systems, and best coding practices.',
+      'Developed MERN stack web applications, contributing to 3 live client projects while building scalable RESTful APIs and dynamic MongoDB schemas.',
     responsibilities: [
-      'Worked as a Frontend Developer and Instructor, bridging code delivery with education.',
-      'Built and optimized clean, responsive web interfaces using HTML, CSS, JavaScript, and React.',
-      'Taught students frontend development and modern web programming fundamentals.',
-      'Helped students understand website design principles, modern component architecture, and practical coding.',
-      'Supported student learning activities, project-based training, and debugging workshops.',
+      'Developed MERN stack web applications, contributing to 3 live client projects during the internship.',
+      'Built RESTful APIs with Node.js/Express.js and designed MongoDB schemas for dynamic data-driven features.',
+      'Collaborated with the team using Git/GitHub for version control and issue tracking.',
+      'Participated in code reviews and agile sprint planning sessions to deliver high-quality code on time.',
     ],
     technologies: [
+      'MERN Stack',
       'React.js',
-      'JavaScript',
-      'HTML5',
-      'CSS3',
-      'Responsive Web Design',
-      'UI/UX Concepts',
-      'Student Mentoring',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'REST APIs',
+      'Git & GitHub',
+      'Agile Sprint Planning',
     ],
     projects: [],
   },
@@ -154,24 +154,71 @@ const experiences = [
     ],
     projects: [
       {
-        name: 'Nishok Hospital Website',
-        url: 'https://nishokhospital.in/',
-        badge: 'Hospital WebApp',
-        desc: 'Official healthcare website with responsive design, services showcase, and inquiries',
+        name: 'RoomFinder Nearby',
+        url: 'https://roomfindernearby.netlify.app/',
+        badge: 'Room Rental WebApp',
+        desc: 'Room rental platform with search, filters, JWT authentication, and role-based access',
+      },
+      {
+        name: 'Excellup Coding Classes',
+        url: 'https://excellup.in/',
+        badge: 'EdTech Platform',
+        desc: 'Online coding courses platform with enrollment, dashboards, and Razorpay integration',
       },
       {
         name: 'Foodify',
         url: 'https://foodifyweb.netlify.app/',
-        badge: 'Food Ordering',
-        desc: 'MERN stack food ordering website with responsive menu, cart, and modern UI',
+        badge: 'Food Delivery WebApp',
+        desc: 'MERN stack food ordering website with responsive menu, cart, and sub-2s page load',
       },
       {
-        name: 'Room Finder Nearby',
-        url: 'https://roomfindernearby.netlify.app/',
-        badge: 'Property Locator',
-        desc: 'Room and rental finder web application with interactive search and listings',
+        name: 'Nishok Hospital Website',
+        url: 'https://nishokhospital.in/',
+        badge: 'Client Project',
+        desc: 'Live freelance client website for a Balaghat doctor, from requirements to deployment',
       },
     ],
+  },
+]
+
+/* ─────────────────────────────────────────────
+   Education & Certifications Data from Resume
+───────────────────────────────────────────── */
+const educationList = [
+  {
+    degree: 'BCA — Bachelor of Computer Applications',
+    institution: 'Makhanlal Chaturvedi National University of Journalism and Communication, Bhopal',
+    period: 'July 2023 – June 2026',
+    status: 'Graduating 2026',
+    iconBg: '#f0ebff',
+    accentColor: '#6f34fe',
+  },
+]
+
+const certificationsList = [
+  {
+    title: 'Web Development Certification',
+    issuer: 'Connect Shiksha Coding Institute, Balaghat',
+    period: 'Jan 2025 – March 2026',
+    badge: 'MERN Stack',
+    accentColor: '#6f34fe',
+    badgeBg: '#f0ebff',
+  },
+  {
+    title: 'GenAI Powered Data Analytics Job Simulation',
+    issuer: 'Tata / Forage',
+    period: 'March 2026',
+    badge: 'GenAI & Analytics',
+    accentColor: '#0284c7',
+    badgeBg: '#e8f7ff',
+  },
+  {
+    title: 'Trust and Security with Google Cloud',
+    issuer: 'Google Cloud India',
+    period: 'Jan 2026',
+    badge: 'Cloud Security',
+    accentColor: '#20c997',
+    badgeBg: '#e6faf5',
   },
 ]
 
@@ -430,6 +477,122 @@ export default function Experience() {
                 </div>
               )
             })}
+          </div>
+        </div>
+
+        {/* ── Education & Certifications from Resume ── */}
+        <div className="mt-20" data-aos="fade-up">
+          <div className="text-center mb-10">
+            <span
+              style={{
+                display: 'inline-block',
+                padding: '4px 14px',
+                borderRadius: 999,
+                background: '#6f34fe14',
+                color: '#6f34fe',
+                fontSize: 12,
+                fontWeight: 700,
+                letterSpacing: 1.5,
+                textTransform: 'uppercase',
+                border: '1px solid #6f34fe24',
+              }}
+            >
+              Academic &amp; Professional Credentials
+            </span>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#3f396d] mt-2">
+              Education &amp; <span style={{ color: '#6f34fe' }}>Certifications</span>
+            </h3>
+            <p className="text-gray-500 text-sm mt-1">
+              Verified certifications and academic foundation supporting my engineering journey
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Education Card */}
+            <div className="bg-white rounded-3xl p-7 md:p-8 shadow-sm border border-[#f0eeff] flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-3.5 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-[#f0ebff] flex items-center justify-center text-2xl text-[#6f34fe] shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f34fe" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                      <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#6f34fe]">Education</span>
+                    <h4 className="text-xl font-bold text-[#3f396d]">Academic Degree</h4>
+                  </div>
+                </div>
+
+                {educationList.map((edu, idx) => (
+                  <div key={idx} className="p-5 rounded-2xl bg-[#faf9ff] border border-[#ebe7fa]">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#f0ebff] text-[#6f34fe] border border-[#6f34fe33]">
+                        {edu.status}
+                      </span>
+                      <span className="text-xs font-semibold text-gray-500 bg-white px-2.5 py-1 rounded-full border border-gray-200">
+                        📅 {edu.period}
+                      </span>
+                    </div>
+                    <h5 className="text-lg font-bold text-[#1a1a2e] mb-1">{edu.degree}</h5>
+                    <p className="text-sm text-gray-600">{edu.institution}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                <span>🎓 Computer Science &amp; Applications</span>
+                <span className="font-semibold text-[#6f34fe]">Makhanlal Chaturvedi University</span>
+              </div>
+            </div>
+
+            {/* Certifications Card */}
+            <div className="bg-white rounded-3xl p-7 md:p-8 shadow-sm border border-[#f0eeff] flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-3.5 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-[#e6faf5] flex items-center justify-center text-2xl text-[#20c997] shrink-0">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#20c997" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="8" r="7" />
+                      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#20c997]">Certifications</span>
+                    <h4 className="text-xl font-bold text-[#3f396d]">Industry Credentials</h4>
+                  </div>
+                </div>
+
+                <div className="space-y-3.5">
+                  {certificationsList.map((cert, idx) => (
+                    <div
+                      key={idx}
+                      className="p-4 rounded-2xl bg-[#f8f9fe] border border-[#ebe7fa] hover:border-[#6f34fe] transition-colors"
+                    >
+                      <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                        <span
+                          className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
+                          style={{
+                            background: cert.badgeBg,
+                            color: cert.accentColor,
+                            border: `1px solid ${cert.accentColor}33`,
+                          }}
+                        >
+                          {cert.badge}
+                        </span>
+                        <span className="text-xs text-gray-400 font-medium">📅 {cert.period}</span>
+                      </div>
+                      <h5 className="text-sm md:text-base font-bold text-[#1a1a2e]">{cert.title}</h5>
+                      <p className="text-xs text-gray-500 mt-0.5">{cert.issuer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                <span>🛡️ Certified in Web Dev &amp; Cloud Security</span>
+                <span className="font-semibold text-[#20c997]">Verified Credentials</span>
+              </div>
+            </div>
           </div>
         </div>
 

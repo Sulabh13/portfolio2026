@@ -8,23 +8,30 @@ import hospital from "../assets/logo.png";
 
 const projects = [
   {
+    title: "RoomFinder Nearby",
+    img: roomrenatl,
+    tags: ["React JS", "Node.js", "MongoDB", "Tailwind CSS"],
+    filter: "website",
+    link: "https://roomfindernearby.netlify.app",
+  },
+  {
     title: "Excellup Coding Classes",
     img: tic,
-    tags: ["MERN Stack", "Website"],
+    tags: ["React JS", "Node.js", "MongoDB", "Razorpay"],
     filter: "website",
     link: "https://excellup.in/",
   },
   {
-    title: "Food Website",
+    title: "Foodify – Food Delivery",
     img: foodWeb,
-    tags: ["React JS", "MERN", "Website"],
+    tags: ["React JS", "Node.js", "MongoDB", "Context API"],
     filter: "website",
     link: "https://foodifyweb.netlify.app",
   },
   {
     title: "Nishok Hospital Website",
     img: hospital,
-    tags: ["HTML & CSS", "JavaScript", "WebApp"],
+    tags: ["Freelance Client", "HTML & CSS", "JavaScript"],
     filter: "brand",
     link: "https://nishokhospital.in/",
   },
@@ -34,13 +41,6 @@ const projects = [
     tags: ["HTML & CSS", "JavaScript", "Game"],
     filter: "game",
     link: "#",
-  },
-  {
-    title: "Room Rental",
-    img: roomrenatl,
-    tags: ["MERN Stack", "Website"],
-    filter: "website",
-    link: "https://roomfindernearby.netlify.app",
   },
   {
     title: "YouTube Clone",
