@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import sulabh from "../assets/sulabh.jpeg"
 
-const words = ['FullStack Developer', 'HTML & CSS', 'JavaScript', 'React']
+const words = ['FullStack Developer', 'Problem Solver & Developer ', 'JavaScript', 'React js']
 
 const InstagramLogo = () => (
   <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
