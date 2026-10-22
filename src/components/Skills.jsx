@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import resumePdf from '../assets/Sulabh_Hathi_Resume 22.10.26.pdf?url'
+import resumePdf from '../assets/my resume.pdf'
 
 
 /* ─────────────────────────────────────────────
