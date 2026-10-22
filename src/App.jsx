@@ -12,6 +12,7 @@
 import BackToTop from "./components/BackToTop"
 import Blog from "./components/Blog"
 import Contact from "./components/Contact"
+import Experience from "./components/Experience"
 import Expertise from "./components/Expertise"
 import Footer from "./components/Footer"
 import Home from "./components/Home"
@@ -27,6 +28,7 @@ function App() {
       <Home />
       <Expertise />
       <Skills />
+      <Experience />
       <Portfolio />
       <Testimonial />
       <Blog />

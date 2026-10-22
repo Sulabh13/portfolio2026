@@ -52,17 +52,17 @@ const posts = [
   {
     img: youtube,
     author: "Sulabh Hathi",
-    date: "september 12, 2025",
-    title: "🎬 How I Built My YouTube Clone",
-    desc: "I built a responsive YouTube clone where users can browse and search videos easily. It shows thumbnails and lets users watch videos in a clean interface. The project focuses on smooth UX and mobile-friendly design.",
+    date: "March 12, 2026",
+    title: "🏥 How I Built My Nishok Hospital Website",
+    desc: "A responsive hospital website with information about doctors, departments, and services, featuring a clean, professional, and mobile-friendly design.",
     content: {
       tech: [
-        "React for frontend UI",
-        "CSS / Tailwind for styling",
-        "JavaScript for functionality",
-        "YouTube Data API for fetching videos",
+       "React for frontend UI",
+"CSS / Tailwind for responsive styling",
+"JavaScript for functionality",
+"API for fetching hospital data",
       ],
-      idea: "I wanted to create a YouTube clone where users can search videos, view thumbnails, and watch videos with a real YouTube-like interface.",
+      idea: "I wanted to create a hospital website that provides comprehensive information about medical services, doctors, and departments.",
       learned: [
         "Working with APIs to fetch video data",
         "Creating responsive video grid layouts",

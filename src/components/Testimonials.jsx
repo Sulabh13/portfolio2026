@@ -58,7 +58,7 @@ export default function Testimonial() {
   return (
     <section id="testimonial" className="py-16 px-6 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        
+
         {/* Image */}
         <div className="flex-1">
           <img
@@ -83,8 +83,8 @@ export default function Testimonial() {
               transform: visible
                 ? "translateX(0)"
                 : anim === "slide-in-right"
-                ? "translateX(40px)"
-                : "translateX(-40px)",
+                  ? "translateX(40px)"
+                  : "translateX(-40px)",
               transition: "opacity 0.3s ease, transform 0.3s ease",
             }}
           >
@@ -104,14 +104,14 @@ export default function Testimonial() {
           <div className="flex items-center gap-4 mt-6">
             <button
               onClick={prev}
-              className="text-3xl text-gray-400 hover:text-[#6f34fe] hover:-translate-x-1 transition-all duration-300"
+              className="text-3xl text-[#F8A430] hover:text-[#6f34fe] hover:-translate-x-1 transition-all duration-300"
             >
               <i className="bi bi-arrow-left-circle-fill"></i>
             </button>
 
             <button
               onClick={next}
-              className="text-3xl text-gray-400 hover:text-[#6f34fe] hover:translate-x-1 transition-all duration-300"
+              className="text-3xl text-[#F8A430] hover:text-[#6f34fe] hover:translate-x-1 transition-all duration-300"
             >
               <i className="bi bi-arrow-right-circle-fill"></i>
             </button>
